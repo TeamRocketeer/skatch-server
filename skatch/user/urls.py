@@ -2,7 +2,7 @@ from django.urls import path, include
 from rest_framework.routers import SimpleRouter
 from django.contrib.auth import views as auth_views
 
-app_name = 'accounts'
+app_name = 'user'
 
 router = SimpleRouter()
 
@@ -10,5 +10,5 @@ router = SimpleRouter()
 
 
 urlpatterns = [
-    path('', include((router.urls, 'accounts')))
+    path('', include((router.urls, 'user')))
 ]

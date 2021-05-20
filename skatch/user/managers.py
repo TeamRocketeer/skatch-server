@@ -1,0 +1,2 @@
+def UserManager():
+    return None
